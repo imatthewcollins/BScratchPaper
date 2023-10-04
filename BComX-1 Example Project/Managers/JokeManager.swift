@@ -23,7 +23,7 @@ class JokeManager: ObservableObject {
         }
         
         do {
-            print("getting data")
+            print("getting data from api")
             let (data, _) = try await URLSession.shared.data(from: url)
             print("got data")
             if let decodedResponse = try? JSONDecoder().decode(Joke.self, from: data) {
