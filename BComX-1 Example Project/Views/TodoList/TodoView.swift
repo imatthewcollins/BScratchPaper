@@ -20,7 +20,6 @@ struct TodoView: View {
                 Text("Id: \(todo.id)")
                     .font(.caption)
                     .foregroundColor(.secondary)
-                Text("Is completed: \(todo.isCompleted ? "true" : "false")")
             }
             Spacer()
             

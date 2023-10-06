@@ -13,6 +13,7 @@ struct SubjectView: View {
     
     var body: some View {
         TextField("Enter your A-Level Subject", text: $userViewModel.userSubject)
+            .padding()
     }
 }
 

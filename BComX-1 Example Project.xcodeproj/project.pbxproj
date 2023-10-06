@@ -20,6 +20,7 @@
 		3E12FA202AD03176006E3404 /* AddNewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E12FA1F2AD03176006E3404 /* AddNewTodoView.swift */; };
 		3E12FA232AD050DA006E3404 /* TodoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E12FA222AD050DA006E3404 /* TodoError.swift */; };
 		3E12FA252AD0613A006E3404 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E12FA242AD0613A006E3404 /* TodoView.swift */; };
+		3E12FA272AD07A63006E3404 /* SharingObjectDataExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E12FA262AD07A63006E3404 /* SharingObjectDataExampleView.swift */; };
 		3E3D91E82ACD6F7000B08707 /* GenerateJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D91E72ACD6F7000B08707 /* GenerateJokeView.swift */; };
 		3E3D91EB2ACD6FC400B08707 /* JokeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D91EA2ACD6FC400B08707 /* JokeManager.swift */; };
 		3E3D91ED2ACD718C00B08707 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3D91EC2ACD718C00B08707 /* Joke.swift */; };
@@ -40,6 +41,7 @@
 		3E12FA1F2AD03176006E3404 /* AddNewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTodoView.swift; sourceTree = "<group>"; };
 		3E12FA222AD050DA006E3404 /* TodoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoError.swift; sourceTree = "<group>"; };
 		3E12FA242AD0613A006E3404 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		3E12FA262AD07A63006E3404 /* SharingObjectDataExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingObjectDataExampleView.swift; sourceTree = "<group>"; };
 		3E3D91E72ACD6F7000B08707 /* GenerateJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateJokeView.swift; sourceTree = "<group>"; };
 		3E3D91EA2ACD6FC400B08707 /* JokeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeManager.swift; sourceTree = "<group>"; };
 		3E3D91EC2ACD718C00B08707 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
@@ -107,10 +109,10 @@
 		3E1039BE2ACD60EF000DB00E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3E12FA292AD07BE2006E3404 /* JokeAPI */,
+				3E12FA282AD07BC0006E3404 /* SharingObjects */,
 				3E12FA212AD050C6006E3404 /* TodoList */,
 				3E1039B12ACD60A9000DB00E /* ContentView.swift */,
-				3E1039C62ACD6855000DB00E /* SubjectView.swift */,
-				3E3D91E72ACD6F7000B08707 /* GenerateJokeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +135,23 @@
 				3E12FA242AD0613A006E3404 /* TodoView.swift */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		3E12FA282AD07BC0006E3404 /* SharingObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3E1039C62ACD6855000DB00E /* SubjectView.swift */,
+				3E12FA262AD07A63006E3404 /* SharingObjectDataExampleView.swift */,
+			);
+			path = SharingObjects;
+			sourceTree = "<group>";
+		};
+		3E12FA292AD07BE2006E3404 /* JokeAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3E3D91E72ACD6F7000B08707 /* GenerateJokeView.swift */,
+			);
+			path = JokeAPI;
 			sourceTree = "<group>";
 		};
 		3E3D91E92ACD6FB600B08707 /* Managers */ = {
@@ -227,6 +246,7 @@
 				3E12FA252AD0613A006E3404 /* TodoView.swift in Sources */,
 				3E12FA1C2AD02A18006E3404 /* TodoViewModel.swift in Sources */,
 				3E12FA1A2AD029E9006E3404 /* Todo.swift in Sources */,
+				3E12FA272AD07A63006E3404 /* SharingObjectDataExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

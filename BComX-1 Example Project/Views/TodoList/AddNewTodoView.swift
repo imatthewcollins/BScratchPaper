@@ -20,6 +20,7 @@ struct AddNewTodoView: View {
                 TodoError()
             }
             .padding()
+            .navigationTitle("Add a new todo")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {

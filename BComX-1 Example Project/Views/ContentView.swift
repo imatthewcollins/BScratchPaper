@@ -12,35 +12,27 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Hello, \(userViewModel.formalName)!")
+            List {
                 
-                if userViewModel.userSubject.count == 0 {
-                    Text("No subject entered")
-                }
-                else {
-                    Text("Your subject is \(userViewModel.userSubject)")
-                    
-                }
                 NavigationLink {
-                    SubjectView(userViewModel: self.userViewModel)
+                    SharingObjectDataExampleView()
                 } label: {
-                    Text("Go to subject view ->")
+                    Text("Share objects between views")
                 }
                 
                 NavigationLink {
                     GenerateJokeView()
                 } label: {
-                    Text("Generate a joke")
+                    Text("Handle APIs")
                 }
 
                 NavigationLink {
                     TodoListView()
                 } label: {
-                    Text("Todo List")
+                    Text("Persist data")
                 }
             }
-            .navigationTitle("Home Page")
+            .navigationTitle("Hello, \(userViewModel.formalName)!")
         }
     }
 }

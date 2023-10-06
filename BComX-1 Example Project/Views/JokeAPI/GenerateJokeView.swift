@@ -25,8 +25,8 @@ struct GenerateJokeView: View {
             } label: {
                 Text("Generate a joke!")
             }
-
         }
+        .navigationTitle("Joke Generator")
     }
 }
 
