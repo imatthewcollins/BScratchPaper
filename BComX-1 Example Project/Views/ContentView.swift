@@ -34,10 +34,14 @@ struct ContentView: View {
                     Text("Generate a joke")
                 }
 
-
+                NavigationLink {
+                    TodoListView()
+                } label: {
+                    Text("Todo List")
+                }
             }
+            .navigationTitle("Home Page")
         }
-        .padding()
     }
 }
 
