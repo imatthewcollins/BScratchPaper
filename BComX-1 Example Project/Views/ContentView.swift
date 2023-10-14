@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject private var userViewModel = UserViewModel.shared
+    @ObservedObject private var navigationManager = NavigationManager.shared
     
     var body: some View {
         NavigationView {
@@ -30,6 +31,12 @@ struct ContentView: View {
                     TodoListView()
                 } label: {
                     Text("Persist data")
+                }
+                
+                NavigationLink {
+                    RootView()
+                } label: {
+                    Text("Pop to a root view")
                 }
             }
             .navigationTitle("Hello, \(userViewModel.formalName)!")
